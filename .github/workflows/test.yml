@@ -1,4 +1,4 @@
-name: Tests
+﻿name: Tests
 
 on:
   push:
@@ -9,7 +9,10 @@ on:
 jobs:
   parser-tests:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 15
+    defaults:
+      run:
+        working-directory: android-app
 
     steps:
     - name: Checkout code
@@ -27,7 +30,7 @@ jobs:
         path: |
           ~/.gradle/caches
           ~/.gradle/wrapper
-        key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
+        key: ${{ runner.os }}-gradle-${{ hashFiles('android-app/**/*.gradle*', 'android-app/gradle/wrapper/gradle-wrapper.properties') }}
         restore-keys: |
           ${{ runner.os }}-gradle-
 
@@ -42,5 +45,5 @@ jobs:
       if: always()
       with:
         name: parser-test-results
-        path: parser-core/build/test-results/test/
+        path: android-app/parser-core/build/test-results/test/
         retention-days: 7
