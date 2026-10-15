@@ -1,0 +1,7 @@
+{
+ "test_mae_inr": 5402.330741733975,
+ "naive_mae_inr": 17398.24441234568,
+ "n_test_windows": 4050,
+ "fp16_max_abs_diff_inr": 25.432037635167944,
+ "tflite_bytes": 478940
+}

@@ -1,0 +1,18 @@
+{
+ "found": [
+  42000,
+  "Food & Dining",
+  1791800142
+ ],
+ "candidates_tested": 12042001,
+ "seconds": 79.54609394073486,
+ "rate_per_s": 151383.93858750362,
+ "full_space": 4800000000,
+ "est_hours_single_cpu_core": 8.807627452252037,
+ "hmac_commitment": "bec8754f182c1111768ac96d087ca4ac5ad301a6e827720992d7b4e6256300c3",
+ "hmac_match_with_wrong_key": false,
+ "hmac_match_with_right_key": true,
+ "hmac_tamper_detected": true,
+ "encoding_unambiguous": true,
+ "test_vector": "c7f1ca2643e8c475d4d47cd47fbb831357de0178a834d56d797e1eed91f973d9"
+}

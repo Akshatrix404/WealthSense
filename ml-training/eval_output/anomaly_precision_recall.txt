@@ -1,0 +1,14 @@
+Isolation Forest -- Held-Out Test Set Evaluation
+==================================================
+Test users: 150
+Test transactions: 45,059
+Actual anomalies: 2,267
+
+Precision: 0.7083
+Recall:    0.6811
+F1:        0.6944
+
+Confusion Matrix:
+              Predicted Normal  Predicted Anomaly
+Actual Normal          42,156               636
+Actual Anomaly            723             1,544

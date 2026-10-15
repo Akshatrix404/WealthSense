@@ -1,0 +1,10 @@
+import pandas as pd, numpy as np
+t=pd.read_csv('/home/claude/berka/fgv-exploratory-data-analysis/data/trans.asc',sep=';',dtype={'k_symbol':str,'bank':str,'account':str,'operation':str,'type':str})
+t['date']=pd.to_datetime(t['date'].astype(str).str.zfill(6),format='%y%m%d')
+t=t.sort_values(['account_id','date','trans_id'])
+print(len(t),t.account_id.nunique(),t.date.min(),t.date.max())
+t.to_pickle('berka_trans.pkl')
+span=t.groupby('account_id').date.agg(lambda s:(s.max()-s.min()).days+1)
+cnt=t.groupby('account_id').size()
+print(span.describe()); print((span>=730).sum(),(span>=1000).sum(),(cnt>=300).sum())
+print(t.type.value_counts().to_dict()); print(t.operation.value_counts().to_dict()); print(t.k_symbol.value_counts().to_dict())

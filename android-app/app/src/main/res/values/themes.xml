@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base theme -->
+    <style name="Theme.WealthSenseCompose" parent="Theme.AppCompat.Light.NoActionBar" />
+    
+    <!-- Splash Screen theme for light mode -->
+    <style name="Theme.WealthSense.SplashScreen" parent="Theme.SplashScreen">
+        
+        <!-- Set splash screen duration (Android 12+) -->
+        <item name="windowSplashScreenAnimationDuration">1000</item>
+        
+        <!-- Set the theme to use after splash screen -->
+        <item name="postSplashScreenTheme">@style/Theme.WealthSenseCompose</item>
+    </style>
+
+    <style name="Theme.WealthSense.SplashScreen.Original" parent="Theme.WealthSense.SplashScreen">
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_logo_original_fg</item>
+    </style>
+
+    <style name="Theme.WealthSense.SplashScreen.Anarchy" parent="Theme.WealthSense.SplashScreen">
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_logo_anarchy_fg</item>
+    </style>
+
+    <style name="Theme.WealthSense.SplashScreen.Zenith" parent="Theme.WealthSense.SplashScreen">
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_logo_zenith_fg</item>
+    </style>
+
+    <style name="Theme.WealthSense.SplashScreen.Monochrome" parent="Theme.WealthSense.SplashScreen">
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_logo_monochrome_fg</item>
+    </style>
+</resources>

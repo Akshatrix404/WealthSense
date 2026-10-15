@@ -1,0 +1,9 @@
+{
+ "tflite_median_ms": 1.0644154999681632,
+ "tflite_p95_ms": 1.2643001501828621,
+ "onnx_median_ms": 1.6019634999793197,
+ "onnx_p95_ms": 1.7711670001972377,
+ "tflite_bytes": 478940,
+ "onnx_bytes": 526778,
+ "note": "host CPU, 2 threads, measured while other jobs were running; not a phone"
+}
