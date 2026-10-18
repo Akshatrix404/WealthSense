@@ -1,4 +1,4 @@
-package com.wealthsense.app.di
+﻿package com.wealthsense.app.di
 
 import android.content.Context
 import androidx.room.Room
@@ -66,7 +66,7 @@ object DatabaseModule {
         sessionManager: SessionManager
     ): CashiroDatabase {
         val activeUsername = sessionManager.getCurrentUsername() ?: "default"
-        val databaseName = "${WealthSenseDatabase.DATABASE_NAME}_$activeUsername"
+        val databaseName = "${CashiroDatabase.DATABASE_NAME}_$activeUsername"
         val database =
             Room.databaseBuilder(
                 context,
