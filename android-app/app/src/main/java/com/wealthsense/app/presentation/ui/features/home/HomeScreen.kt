@@ -1429,6 +1429,14 @@ private fun ForecastCard(
                             alpha = Dimensions.Alpha.subtitle
                         )
                     )
+                    Spacer(modifier = Modifier.height(Spacing.xs))
+                    Text(
+                        text = stringResource(R.string.forecast_card_experimental_note),
+                        style = MaterialTheme.typography.labelSmall,
+                        color = MaterialTheme.colorScheme.onSurface.copy(
+                            alpha = Dimensions.Alpha.subtitle
+                        )
+                    )
                 }
             }
         }
