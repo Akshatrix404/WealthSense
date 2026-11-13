@@ -378,7 +378,8 @@
     <string name="close">Close</string>
     <string name="subscriptions_count_format">%1$d Subscriptions</string>
     <string name="per_month">/ Month</string>
-    <string name="forecast_card_title">Predicted balance in 7 days</string>
+    <string name="forecast_card_title">Predicted balance in 7 days (experimental)</string>
+    <string name="forecast_card_experimental_note">Experimental: this forecast has not been validated on real accounts. Treat it as a rough guide only.</string>
     <string name="forecast_card_predicted_balance">%1$s</string>
     <string name="forecast_card_range">Likely range: %1$s – %2$s</string>
     <string name="forecast_card_not_enough_data">Keep using WealthSense — %1$d of %2$d days of history collected. The forecast unlocks once there\'s enough to learn your pattern.</string>
